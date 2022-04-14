@@ -42,7 +42,7 @@ var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
-    console.log('API called successfully. Returned data: ' + data);
+    console.log('API called successfully. Returned data: ' , data.result);
   }
 };
 apiInstance.keywordExtraction(language, text, providers, callback);
@@ -101,7 +101,7 @@ var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
-    console.log('API called successfully. Returned data: ' + data);
+    console.log('API called successfully. Returned data: ' , data.result);
   }
 };
 apiInstance.namedEntityRecognition(language, text, providers, callback);
@@ -160,7 +160,7 @@ var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
-    console.log('API called successfully. Returned data: ' + data);
+    console.log('API called successfully. Returned data: ' , data.result);
   }
 };
 apiInstance.sentimentAnalysis(language, text, providers, callback);
@@ -219,7 +219,7 @@ var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
-    console.log('API called successfully. Returned data: ' + data);
+    console.log('API called successfully. Returned data: ' , data.result);
   }
 };
 apiInstance.syntaxAnalysis(language, text, providers, callback);

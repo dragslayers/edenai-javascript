@@ -40,7 +40,7 @@ var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
-    console.log('API called successfully. Returned data: ' + data);
+    console.log('API called successfully. Returned data: ' , data.result);
   }
 };
 apiInstance.ocr(files, providers, language, callback);
@@ -99,7 +99,7 @@ var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
-    console.log('API called successfully. Returned data: ' + data);
+    console.log('API called successfully. Returned data: ' , data.result);
   }
 };
 apiInstance.ocrInvoice(files, providers, language, callback);
